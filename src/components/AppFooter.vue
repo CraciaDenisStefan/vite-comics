@@ -8,12 +8,12 @@ export default {
     <footer>
         <!-- Footer parte alta  -->
         <div class="footer_up">
-            <div class="container d_flex">
+            <div class="container d_flex container_logo_info">
                 <div class="info_footer d_flex">
                     <div class="li_footer">
                         <div class="li_footer_up">
                             <ul>
-                                <h5>DC COMICS</h5>
+                                <h4>DC COMICS</h4>
                                 <li><a href="#">Characters</a></li>
                                 <li><a href="#">Comics</a></li>
                                 <li><a href="#">Movies</a></li>
@@ -25,7 +25,7 @@ export default {
                         </div>
                         <div class="li_footer_down">
                             <ul>
-                                <h5>SHOP</h5>
+                                <h4>SHOP</h4>
                                 <li><a href="#">Shop DC</a></li>
                                 <li><a href="#">Shop DC Colectibles </a></li>
                             </ul>
@@ -33,7 +33,7 @@ export default {
                     </div>
                     <div class="li_footer">
                         <ul>
-                                <h5>DC</h5>
+                                <h4>DC</h4>
                                 <li><a href="#">Terms Of Use</a></li>
                                 <li><a href="#">Privacy policy(New)</a></li>
                                 <li><a href="#">Ad Choices</a></li>
@@ -49,7 +49,7 @@ export default {
                     </div>
                     <div class="li_footer">
                         <ul>
-                                <h5>SITES</h5>
+                                <h4>SITES</h4>
                                 <li><a href="#">DC</a></li>
                                 <li><a href="#">MAD Magazine</a></li>
                                 <li><a href="#">DC Kids</a></li>
@@ -58,7 +58,9 @@ export default {
                             </ul>
                     </div>
                 </div>
-                <div class="logo_footer"></div>
+                <div class="logo_footer">
+                    
+                </div>
             </div>
         </div>
         <!-- Footer parte bassa -->
@@ -86,11 +88,18 @@ export default {
         width: 100%;
         background-image: url(../assets/img/footer-bg.jpg); 
     }
+    .container_logo_info{
+        justify-content: space-between;
+    }
     .info_footer{
         width: 40%;
+        padding: 30px 0;
     }
     .logo_footer{
-        width: 60%;
+        width: 40%;
+        background-image: url(../assets/img/dc-logo-bg.png);
+        background-size: cover;
+        background-position-y: center;
     }
     .footer_down{
         width: 100%;
@@ -109,15 +118,22 @@ export default {
         }
     }
     .li_footer{
-       
-        background-color: yellow;
+       color: white;
         margin: 5px;
-        
-        .li_footer_up, .li_footer_down{
-          
-            background-color: red;
-            border: 1px solid black;
-        }
     }
+    ul{
+        list-style: none;
+        a{
+                text-decoration: none;
+                color: rgb(153, 151, 151);
     
+            }
+       }
+    .li_footer_down{
+        margin-top: 20px;
+    }
+    h4{
+        margin-bottom: 10px;
+    }
+        
 </style>

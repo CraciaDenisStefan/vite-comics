@@ -61,9 +61,6 @@ export default {
     .main_second{
         width: 100%;
         background-color: rgb(30, 86, 206);
-        .main_second_section{
-            justify-content: center;
-        }
     }
     .section{
         width: calc(100% / 5 - 40px);
