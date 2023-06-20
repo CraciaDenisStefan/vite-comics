@@ -1,6 +1,20 @@
 <script>
 export default {
-    
+    data(){
+        return{
+            menu_main:[
+                {
+                    img:'../assets/img/buy-comics-digital-comics.png',
+                    describtion:'Digital comics',
+                },
+                {
+                    img:'../assets/img/buy-comics-merchandise.png',
+                    describtion:'Dc merchandise',
+                },
+
+            ]
+        }
+    }
 }
 </script>
 <template>
@@ -9,25 +23,11 @@ export default {
         <!-- Inizio main sezione sotto -->
         <div class="main_second">
             <div class="main_second_section container d_flex">
-                <div class="section ">
-                    <div class="section_left"></div>
-                    <div class="section_right"></div>
-                </div>
-                <div class="section ">
-                    <div class="section_left"></div>
-                    <div class="section_right"></div>
-                </div>
-                <div class="section">
-                    <div class="section_left"></div>
-                    <div class="section_right"></div>
-                </div>
-                <div class="section">
-                    <div class="section_left"></div>
-                    <div class="section_right"></div>
-                </div>
-                <div class="section">
-                    <div class="section_left"></div>
-                    <div class="section_right"></div>
+                <div class="section " v-for="(menu, index) in menu_main " :key="index">    
+                    <div class="section_right">
+                        <img :src="menu.img" alt="">
+                        {{ menu.describtion }}
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,10 +49,9 @@ export default {
     }
     .section{
         margin: 0 20px;
-        .section_left, .section_right{
-            width: 100px;
-            height: 50px;
-            background-color: green;
-        }
+    }
+    img{
+        width: 50px;
+        height: 50px;
     }
 </style>
