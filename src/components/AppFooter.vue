@@ -11,6 +11,7 @@ export default {
             <div class="container d_flex container_logo_info">
                 <div class="info_footer d_flex">
                     <div class="li_footer">
+                        <!-- div con dentro due liste una sopra l'altra -->
                         <div class="li_footer_up">
                             <ul>
                                 <h4>DC COMICS</h4>
@@ -31,6 +32,7 @@ export default {
                             </ul>
                         </div>
                     </div>
+                    <!-- Altri due div con le liste di info nel footer parte alta -->
                     <div class="li_footer">
                         <ul>
                                 <h4>DC</h4>
@@ -58,23 +60,27 @@ export default {
                             </ul>
                     </div>
                 </div>
-                <div class="logo_footer">
-                    
+                <div class="logo_footer"> 
+                    <!-- Div per sistemare il logo dc come background -->
                 </div>
             </div>
         </div>
         <!-- Footer parte bassa -->
         <div class="footer_down">
             <div class="container d_flex social_footer_down">
-                <div class="button_footer"></div>
+                <!-- Bottone per il sing up -->
+                <div class="button_footer">
+                    <button>SIGN-UP NOW!</button>
+                </div>
                 <div class="social_footer">
-                    <ul>
-                        <li> <a href="#"></a></li>
-                        <li> <a href="#"></a></li>
-                        <li> <a href="#"></a></li>
-                        <li> <a href="#"></a></li>
-                        <li> <a href="#"></a></li>
-                        <li> <a href="#"></a></li>
+                    <!-- Lista social media footer -->
+                    <ul class="d_flex">
+                        <li class="follow"> FOLLOW US </li>
+                        <li> <a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+                        <li> <a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+                        <li> <a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+                        <li> <a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+                        <li> <a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a></li>
                     </ul>
                 </div>
 
@@ -103,17 +109,14 @@ export default {
     }
     .footer_down{
         width: 100%;
-        height: 100px;
         background-color: rgb(23, 23, 24);
 
         .social_footer_down{
             justify-content: space-between;
+            align-content: center;
 
             .button_footer, .social_footer{
-                width: 200px;
-                height: 50px;
-                background-color: yellow;
-                margin: 20px 0;
+                margin: 30px 0;
             }
         }
     }
@@ -126,7 +129,9 @@ export default {
         a{
                 text-decoration: none;
                 color: rgb(153, 151, 151);
-    
+                &:hover{
+                    color: white;
+                }
             }
        }
     .li_footer_down{
@@ -134,6 +139,36 @@ export default {
     }
     h4{
         margin-bottom: 10px;
+    }
+
+    // FOOTER PARTE SOTTO
+    button{
+        border: 2px solid rgb(65, 65, 241);
+        background: transparent;
+        color: white;
+        padding: 15px;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+        &:hover{
+                background-color: rgb(65, 65, 241);
+        }
+    }
+    .social_footer{
+        a{
+            margin: 0 10px;
+            &:hover{
+                filter: invert(100%);
+        }
+        }
+        
+    }
+    .follow{
+       align-self: center;
+       color: rgb(65, 65, 241);
+       font-weight: 700;
+       margin-right: 10px;
+       cursor: context-menu;
     }
         
 </style>

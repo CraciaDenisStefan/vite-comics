@@ -61,6 +61,7 @@ export default {
 </script>
 <template>
    <header class="container d_flex">
+    <!-- Container con dentro logo e menu  -->
     <div class="logo">
         <img src="../assets/img/dc-logo.png" alt="">
     </div>

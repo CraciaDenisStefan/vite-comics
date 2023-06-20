@@ -71,13 +71,24 @@ export default {
         text-transform: uppercase;
         color: white;
         padding: 40px 0;
+        
+       
         .section_left{
             width: 20%;
+            &:hover{
+            filter: invert(50%);
+            cursor: pointer;
+        }
         }
         .section_right{
             width: 70%;
             margin-left: 5px;
+            &:hover{
+            filter: invert(50%);
+            cursor: pointer;
         }
+    }
+        
     }
     img{
         width: 100%;
