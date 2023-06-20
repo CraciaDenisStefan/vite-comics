@@ -95,12 +95,15 @@ export default {
                 text-decoration: none;
                 font-weight: 700;
                 text-transform: uppercase;
-                color:rgb(70, 70, 70)
+                color:rgb(70, 70, 70);
+                &:hover{
+                color: rgb(42, 86, 228);
+               
+            }
 
             }
             &:hover{
                 border-bottom: 5px solid rgb(42, 86, 228);
-                color: rgb(42, 86, 228);
                
             }
         }
