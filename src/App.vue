@@ -20,5 +20,7 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss">
+@use './styles/generals.scss'as *;
+
 </style>
