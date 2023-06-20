@@ -11,11 +11,52 @@ export default {
             <div class="container d_flex">
                 <div class="info_footer d_flex">
                     <div class="li_footer">
-                        <div class="li_footer_up"></div>
-                        <div class="li_footer_down"></div>
+                        <div class="li_footer_up">
+                            <ul>
+                                <h5>DC COMICS</h5>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Comics</a></li>
+                                <li><a href="#">Movies</a></li>
+                                <li><a href="#">TV</a></li>
+                                <li><a href="#">Games</a></li>
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </div>
+                        <div class="li_footer_down">
+                            <ul>
+                                <h5>SHOP</h5>
+                                <li><a href="#">Shop DC</a></li>
+                                <li><a href="#">Shop DC Colectibles </a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="li_footer"></div>
-                    <div class="li_footer"></div>
+                    <div class="li_footer">
+                        <ul>
+                                <h5>DC</h5>
+                                <li><a href="#">Terms Of Use</a></li>
+                                <li><a href="#">Privacy policy(New)</a></li>
+                                <li><a href="#">Ad Choices</a></li>
+                                <li><a href="#">Advertising</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Subscriptions</a></li>
+                                <li><a href="#">Talent Workshops</a></li>
+                                <li><a href="#">CPSC Certificates</a></li>
+                                <li><a href="#">Ratings</a></li>
+                                <li><a href="#">Shop Help</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                    </div>
+                    <div class="li_footer">
+                        <ul>
+                                <h5>SITES</h5>
+                                <li><a href="#">DC</a></li>
+                                <li><a href="#">MAD Magazine</a></li>
+                                <li><a href="#">DC Kids</a></li>
+                                <li><a href="#">DC Univers</a></li>
+                                <li><a href="#">DC Power Visa</a></li>
+                            </ul>
+                    </div>
                 </div>
                 <div class="logo_footer"></div>
             </div>
@@ -68,14 +109,12 @@ export default {
         }
     }
     .li_footer{
-        width: 50px;
-        height: 100px;
+       
         background-color: yellow;
         margin: 5px;
         
         .li_footer_up, .li_footer_down{
-            width: 20px;
-            height: 50px;
+          
             background-color: red;
             border: 1px solid black;
         }
