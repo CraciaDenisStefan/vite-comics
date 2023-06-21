@@ -17,6 +17,10 @@ export default {
 .card{
     width: calc(100% / 6 - 20px);
     margin: 10px;
+
+    &:hover{
+    filter:sepia(100%);
+}
     .title_card{
         text-transform: uppercase;
     }
@@ -27,5 +31,6 @@ export default {
     object-position: top;
     margin-bottom: 10px;
 }
+
 }
 </style>
