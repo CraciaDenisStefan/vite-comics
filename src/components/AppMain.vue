@@ -186,8 +186,13 @@ export default {
     }
     .main_second{
         width: 100%;
-        flex-wrap: wrap;
+       
         background-color: $dc_color;
+    }
+
+    .main_second_section{
+        width: 70%;
+        flex-wrap: wrap;
     }
     .section{
         width: calc(100% / 5 - 40px);
@@ -201,7 +206,7 @@ export default {
         
        
         .section_left{
-            width: 20%;
+            width: 30%;
             &:hover{
             filter: invert(50%);
             cursor: pointer;
@@ -219,4 +224,30 @@ export default {
     img{
         width: 100%;
     }
+
+@media screen and (max-width: 1068px){
+    .section{
+        width: calc(100% / 3 - 40px);}
+}
+ @media screen and (max-width: 760px){
+        .button_main_first{
+    
+        button{
+            width: 30%;
+        }
+        }
+        .section{
+        width: calc(100% / 2 - 40px);}
+   
+}
+@media screen and (max-width: 460px){
+    .button_main_first{
+    
+    button{
+        width: 50%;
+    }
+    }
+    .section{
+        width: 100%}
+}
 </style>

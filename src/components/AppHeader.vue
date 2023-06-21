@@ -66,11 +66,14 @@ export default {
         <img src="../assets/img/dc-logo.png" alt="">
     </div>
     <div class="menu">
-        <ul class="d_flex">
+        <ul class="d_flex menu_header">
             <li v-for="(lista, index) in menu" :key="index">
                <a :href="lista.link"> {{ lista.label }}</a>
             </li>
         </ul>
+        <div class="hamburgher_menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
    </header>
 </template>
@@ -107,6 +110,27 @@ export default {
                 border-bottom: 5px solid $dc_color;
                
             }
+        }
+    }
+    .hamburgher_menu{
+            display: none;
+            .fa-solid{
+                color: rgb(70, 70, 70);
+                font-size: 2rem;
+                padding: 30px 0;
+                cursor: pointer;
+                &:hover{
+                    color: $dc_color;
+                }
+            }
+            
+        }
+    @media screen and (max-width: 1068px){
+        .menu_header{
+            display: none;
+        }
+        .hamburgher_menu{
+            display: block;
         }
     }
 </style>

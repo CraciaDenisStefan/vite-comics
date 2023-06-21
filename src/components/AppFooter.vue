@@ -99,11 +99,12 @@ export default {
         justify-content: space-between;
     }
     .info_footer{
-        width: 40%;
+        width: 50%;
         padding: 30px 0;
+        
     }
     .logo_footer{
-        width: 40%;
+        width: 50%;
         background-image: url(../assets/img/dc-logo-bg.png);
         background-size: cover;
         background-position-y: center;
@@ -171,5 +172,39 @@ export default {
        margin-right: 10px;
        cursor: context-menu;
     }
+
+
+
+@media screen and (max-width: 1068px){
+    .info_footer{
+        width: 70%;
+    }
+    .logo_footer{
+        width: 30%;
+        background-size: contain;
+        background-repeat: no-repeat;}
+}
+
+@media screen and (max-width: 860px){
+    .logo_footer{
+        display: none;
+    }
+    .info_footer{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+   
+}
+@media screen and (max-width: 760px){
+    .social_footer_down{
+        flex-wrap: wrap;
+    }
+   
+}
+@media screen and (max-width: 540px){
+   .follow{
+    display: none;
+   }
+}
         
 </style>

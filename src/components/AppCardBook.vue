@@ -28,11 +28,26 @@ export default {
     }
     img{
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
     object-position: top;
     margin-bottom: 10px;
 }
 
+}
+@media screen and (max-width: 1068px){
+    .card{
+    width: calc(100% / 4 - 20px);
+    }
+}
+@media screen and (max-width: 760px){
+    .card{
+    width: calc(100% / 2 - 20px);
+    }
+}
+@media screen and (max-width: 460px){
+    .card{
+    width: calc(100% - 20px);
+    }
 }
 </style>
