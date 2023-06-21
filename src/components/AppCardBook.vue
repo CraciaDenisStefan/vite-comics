@@ -18,6 +18,7 @@ export default {
 .card{
     width: calc(100% / 6 - 20px);
     margin: 10px;
+    cursor: pointer;
 
     &:hover{
     filter:sepia(100%);

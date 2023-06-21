@@ -154,6 +154,7 @@ export default {
     .curent_series{
         background-color: $dc_color;
         color:white;
+        font-weight: 600;
         padding: 10px;
         position: absolute;
         top: -20px;
@@ -168,6 +169,8 @@ export default {
             border: none;
             color: white;
             background-color: $dc_color;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
             cursor: pointer;
             &:hover{
                 color: black;
@@ -175,7 +178,6 @@ export default {
             }
         }
     }
-
     .content_main{
         width: 100%;
         flex-wrap: wrap;
