@@ -14,6 +14,7 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../styles/partials/variables'as *;
 .card{
     width: calc(100% / 6 - 20px);
     margin: 10px;

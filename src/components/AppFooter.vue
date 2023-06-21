@@ -90,6 +90,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/partials/variables'as *;
     .footer_up{
         width: 100%;
         background-image: url(../assets/img/footer-bg.jpg); 
@@ -143,7 +144,7 @@ export default {
 
     // FOOTER PARTE SOTTO
     button{
-        border: 2px solid rgb(65, 65, 241);
+        border: 2px solid $dc_color;
         background: transparent;
         color: white;
         padding: 15px;
@@ -151,7 +152,7 @@ export default {
         font-size: 1rem;
         cursor: pointer;
         &:hover{
-                background-color: rgb(65, 65, 241);
+                background-color: $dc_color;
         }
     }
     .social_footer{
@@ -165,7 +166,7 @@ export default {
     }
     .follow{
        align-self: center;
-       color: rgb(65, 65, 241);
+       color: $dc_color;
        font-weight: 700;
        margin-right: 10px;
        cursor: context-menu;

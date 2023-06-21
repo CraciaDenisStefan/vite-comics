@@ -75,6 +75,7 @@ export default {
    </header>
 </template>
 <style scoped lang="scss">
+@use '../styles/partials/variables'as *;
     header{
         justify-content: space-between;
         align-items: center;
@@ -97,13 +98,13 @@ export default {
                 text-transform: uppercase;
                 color:rgb(70, 70, 70);
                 &:hover{
-                color: rgb(42, 86, 228);
+                color: $dc_color;
                
             }
 
             }
             &:hover{
-                border-bottom: 5px solid rgb(42, 86, 228);
+                border-bottom: 5px solid $dc_color;
                
             }
         }

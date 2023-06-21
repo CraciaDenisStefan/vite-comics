@@ -110,11 +110,18 @@ export default {
     <main>
         <!-- Main parte alta vuota -->
         <div class="main_first">
-            <div class="container">
-                <!-- Con appcard creiamo tutte le nostre card con copertine dei fumetti -->
-                <div class="content_main d_flex "> <AppCard v-for="(fumetto, index) in fumetti " :key="index" :unFumetto="fumetto"/></div>     
+            <div class="cover_img">
+                <img src="../assets/img/jumbotron.jpg" alt="">
             </div>
-
+            <div class="container position_relative">
+                <div class="curent_series">CURENT SERIES</div>
+                <!-- Con appcard creiamo tutte le nostre card con copertine dei fumetti -->
+                <div class="content_main d_flex "> <AppCard v-for="(fumetto, index) in fumetti " :key="index" :unFumetto="fumetto"/></div>   
+                <div class="button_main_first">
+                    <button>LOAD MORE</button>
+                </div>  
+            </div>
+            
         </div>
         <!-- Inizio main sezione sotto -->
         <div class="main_second">
@@ -132,20 +139,53 @@ export default {
     </main>
 </template>
 <style scoped lang="scss">
+@use '../styles/partials/variables'as *;
     .main_first{
         width: 100%;
         background-color: rgb(27, 27, 27);
+        .cover_img{ 
+            img{
+                height: 350px;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
     }
+    .curent_series{
+        background-color: $dc_color;
+        color:white;
+        padding: 10px;
+        position: absolute;
+        top: -20px;
+    }
+    .button_main_first{
+        text-align: center;
+        padding-bottom:20px ;
+        button{
+            width: 15%;
+            font-size: 0.7rem;
+            padding: 10px;
+            border: none;
+            color: white;
+            background-color: $dc_color;
+            cursor: pointer;
+            &:hover{
+                color: black;
+                background-color: white;
+            }
+        }
+    }
+
     .content_main{
         width: 100%;
         flex-wrap: wrap;
         color: white;
-        padding: 40px 0;
+        padding: 30px 0;
     }
     .main_second{
         width: 100%;
         flex-wrap: wrap;
-        background-color: rgb(30, 86, 206);
+        background-color: $dc_color;
     }
     .section{
         width: calc(100% / 5 - 40px);
